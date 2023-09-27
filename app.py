@@ -5,7 +5,7 @@ import uuid
 import dash_bootstrap_components as dbc
 import dash_mantine_components as dmc
 import openai
-from dash import Dash, Input, Output, State, callback, page_container, html
+from dash import Dash, Input, Output, State, callback, html, page_container
 from flask import request
 
 import utils

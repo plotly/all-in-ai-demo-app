@@ -4,8 +4,8 @@ import dash_chart_editor as dce
 import dash_mantine_components as dmc
 import openai
 import pandas as pd
-from dash import Input, Output, State, callback, dcc, html, no_update, register_page
 import plotly.graph_objects as go
+from dash import Input, Output, State, callback, dcc, html, no_update, register_page
 
 import utils
 

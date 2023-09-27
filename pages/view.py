@@ -1,11 +1,11 @@
-import pickle
 import json
+import pickle
+
 import dash
 import dash_bootstrap_components as dbc
-from dash import dcc, html
 import dash_mantine_components as dmc
-
 import openai
+from dash import dcc, html
 
 from constants import redis_instance
 
