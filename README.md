@@ -1,5 +1,5 @@
 # All in AI Demo App
-A demo app for the All in AI presentation on September 27, 2023.
+A demo app for the [All in AI](https://allinevent.ai/) presentation on September 27, 2023.
 
 Presented by Nathan Drezner ([@ndrezn](https://github.com/ndrezn)).
 
