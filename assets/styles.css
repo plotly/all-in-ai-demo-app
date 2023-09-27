@@ -1,0 +1,55 @@
+#chat-submit {
+    margin: 5px
+}
+
+#chat-output {
+    overflow-y: scroll;
+    height: 400px;
+}
+
+#chart-editor {
+    height: 100%;
+    width: 50vw
+}
+
+#chat-container {
+    width: 50vw;
+    border-width: 20px;
+    padding: 20px;
+    border-left: 1px solid rgb(206, 212, 218); /* Adjust the width and color as needed */
+}
+
+#flex {
+    display: flex
+}
+
+#padded #current-charts {
+    padding: 20px
+}
+
+#current-charts{
+    margin: 20px
+}
+
+.chat-item {
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question {
+    color: black;
+    margin-right: 20px; /* Add 5px margin to the right of the question */
+}
+
+.answer {
+    color: grey;
+    margin-left: 20px; /* Add 5px margin to the left of the answer */
+}
+
+#loader {
+    height:15px
+}

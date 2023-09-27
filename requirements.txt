@@ -1,0 +1,9 @@
+dash
+dash-mantine-components
+dash-bootstrap-components
+gunicorn
+pandas
+dash-chart-editor
+openai
+dash-ag-grid
+redis
