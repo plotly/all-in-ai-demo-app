@@ -4,7 +4,6 @@ import dash_chart_editor as dce
 import dash_mantine_components as dmc
 import openai
 import pandas as pd
-import plotly.graph_objects as go
 from dash import Input, Output, State, callback, dcc, html, no_update, register_page
 
 import utils
@@ -109,7 +108,7 @@ def chat_window(n_clicks, data, question, cur):
     Input("add-to-layout", "n_clicks"),
     prevent_initial_call=True,
 )
-def save_figure(n):
+def save_figure_to_chart_editor(n):
     if n:
         return True
 

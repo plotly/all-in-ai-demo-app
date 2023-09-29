@@ -1,0 +1,11 @@
+[flake8]
+max-line-length = 120
+extend-ignore = E203
+exclude =
+    .pytest_cache,
+    __pycache__,
+    dash_enterprise/components/__init__.py
+    dash_enterprise/components/components/
+    build/
+    dist/
+    venv*/

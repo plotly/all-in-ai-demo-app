@@ -1,6 +1,5 @@
 import base64
 import io
-import random
 
 import dash_ag_grid as dag
 import dash_bootstrap_components as dbc
@@ -19,7 +18,9 @@ def jumbotron():
             [
                 html.H2("Data insights with Dash and OpenAI", className="display-4"),
                 dcc.Markdown(
-                    "This application uses [Dash Chart Editor](https://github.com/BSd3v/dash-chart-editor) as an interface to explore a dataset and OpenAI's API to interact in real-time with a dataset by asking questions about its contents.",
+                    "This application uses [Dash Chart Editor](https://github.com/BSd3v/dash-chart-editor)"
+                    " as an interface to explore a dataset and OpenAI's API to interact in real-time with "
+                    "a dataset by asking questions about its contents.",
                     className="lead",
                 ),
                 html.Hr(className="my-2"),
@@ -41,7 +42,6 @@ def jumbotron():
                                 "margin-left": "10px",
                             },
                         ),
-                        
                     ],
                     className="lead",
                     style={"display": "flex"},
@@ -77,7 +77,8 @@ def upload_modal():
                             "borderRadius": "5px",
                             "textAlign": "center",
                             "margin": "10px",
-                            "font-family": "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji",
+                            "font-family": "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial,"
+                            " sans-serif, Apple Color Emoji, Segoe UI Emoji",
                         },
                         # Allow multiple files to be uploaded
                         multiple=False,
@@ -138,14 +139,17 @@ def generate_prompt(df, question):
 
     # Compliment and Prompt
     prompt = (
-        "You are a data analyst and chart design expert helping users build charts and answer questions about arbitrary datasets. "
-        "The user's question will be provided. Ensure you answer the user's question accurately and given the context"
-        "of the dataset. The user will use the results of your commentary to work on a chart or to research the data using Dash Chart Editor, a product"
-        "built by Plotly. If the user's question doesn't make sense, feel free to make a witty remark about Plotly and Dash. "
-        "Your response should use Markdown markup. Limit your response to only 1-3 sentences. Address the user directly as they can see your response."
+        "You are a data analyst and chart design expert helping users build charts and answer "
+        "questions about arbitrary datasets. The user's question will be provided. Ensure you "
+        "answer the user's question accurately and given the context of the dataset. The user "
+        "will use the results of your commentary to work on a chart or to research the data "
+        "using Dash Chart Editor, a product built by Plotly. If the user's question doesn't "
+        " make sense, feel free to make a witty remark about Plotly and Dash. Your response "
+        "should use Markdown markup. Limit your response to only 1-3 sentences. Address the "
+        "user directly as they can see your response."
     )
 
-    prompt = f"{prompt}\n\n\Context:\n\n{insights_text}\n\nUser's Question: {question}"
+    prompt = f"{prompt}\n\nContext:\n\n{insights_text}\n\nUser's Question: {question}"
 
     return prompt
 

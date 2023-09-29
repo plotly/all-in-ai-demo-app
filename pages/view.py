@@ -16,13 +16,15 @@ def layout(layout=None):
     layout = redis_instance.get(layout)
     layout = pickle.loads(layout)
 
+    figures = [i["props"]["children"][0]["props"]["figure"] for i in layout[1:]]
+
     question = (
         "The following is a Plotly Dash layout with several charts. Summarize "
         "the charts for me and provide some maximums, mimumuns, trends, "
-        "notable outliers, etc. Describe the data and content as the user doesn't know it's a layout.\n\n\n"
+        "notable outliers, etc. Describe the data and content as the user doesn't know it's a layout."
+        "The data may be truncated to comply with a max character count. "
+        f"There should be {len(figures)} charts to follow:\n\n\n"
     )
-
-    figures = [i["props"]["children"][0]["props"]["figure"] for i in layout[1:]]
 
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
