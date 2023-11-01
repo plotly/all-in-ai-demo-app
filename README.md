@@ -3,9 +3,8 @@ A demo app for the [All in AI](https://allinevent.ai/) presentation on September
 
 Developed & presented by Nathan Drezner ([@ndrezn](https://github.com/ndrezn)).
 
-<p align="center">
-    <img src="screenshots/2.png", width=500>
-</p>
+
+https://github.com/plotly/all-in-ai-demo-app/assets/32049495/35f40db8-e83d-4ad7-af9b-a9390f696bde
 
 
 This application uses [Dash Chart Editor](https://github.com/BSd3v/dash-chart-editor) and the [OpenAI Python library](https://github.com/openai/openai-python) to build an application allowing users to ask questions about a dataset and persist views of their dataset with analytics associated.
