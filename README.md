@@ -1,4 +1,11 @@
 # All in AI Demo App
+
+<div align="center">
+  <a href="https://dash.plotly.com/project-maintenance">
+    <img src="https://dash.plotly.com/assets/images/maintained-by-plotly.png" width="400px" alt="Maintained by Plotly">
+  </a>
+</div>
+
 A demo app for the [All in AI](https://allinevent.ai/) presentation on September 27, 2023.
 
 Developed & presented by Nathan Drezner ([@ndrezn](https://github.com/ndrezn)).
