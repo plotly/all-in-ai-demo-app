@@ -4,6 +4,6 @@ dash-bootstrap-components
 gunicorn
 pandas
 dash-chart-editor
-openai
+openai<1.0.0
 dash-ag-grid
 redis
